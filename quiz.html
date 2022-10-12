@@ -17,43 +17,110 @@
         <a href="area.html">Area</a>
     </nav>
     <h1 class="heading">Triangle Quiz</h1>
-    <form class="container quiz-form">
-        <div class="quiz-container">
-            <p>
-                What is the third angle for the triangle where angle1 = 45° and angle2
-                = 45°?
-            </p>
-            <label>
-                <input required type="radio" name="options" value="45°" />
-                45°
-            </label>
-            <label>
-                <input required type="radio" name="options" value="60°" />
-                60°
-            </label>
-            <label>
-                <input required type="radio" name="options" value="90°" />
-                90°
-            </label>
-        </div>
-        <div class="quiz-container">
-            <p>If a triangle has an angle of 90 degrees, what is it called?</p>
-            <label>
-                <input required type="radio" name="option1" value="obtuse" />
-                obtuse
-            </label>
-            <label>
-                <input required type="radio" name="option1" value="acute" />
-                acute
-            </label>
-            <label>
-                <input required type="radio" name="option1" value="right angled" />
-                right angled
-            </label>
-        </div>
-        <button id="submit-btn" class="btn" type="submit">Submit Form</button>
-    </form>
-    <h2 class="output"></h2>
+    <div class="center">
+        <form class="form">
+            <div class=quesContainer>
+                <p>How many vertices does a triangle have ?</p>
+                <label>
+                    <input type="radio" name=question1 value="1" required/>1
+                    <input type="radio" name=question1 value="2" required/>2
+                    <input type="radio" name=question1 value="3" required/>3
+                </label>
+            </div>
+            <div class=quesContainer>
+                <p>If two sides of a triangle are not equal, the triangle is called ?</p>
+                <label>
+                    <input type="radio" name=question2 value="scalene" required/>scalene
+                    <input type="radio" name=question2 value="isosceles" required/> isosceles
+                    <input type="radio" name=question2 value="equilateral" required/>equilateral
+                </label>
+            </div>
+            <div class=quesContainer>
+                <p>How many sides are there in a triangle ?</p>
+                <label>
+                    <input type="radio" name=question3 value="1" required/>1
+                    <input type="radio" name=question3 value="2" required/>2
+                    <input type="radio" name=question3 value="3" required/>3
+                </label>
+            </div>
+            <div class=quesContainer>
+                <p>If two sides of a triangle are equal, the triangle is called ?</p>
+                <label>
+                    <input type="radio" name=question4 value="scalene" required/>scalene
+                    <input type="radio" name=question4 value="isosceles" required/> isosceles
+                    <input type="radio" name=question4 value="equilateral" required/>equilateral
+                </label>
+            </div>
+
+            <div class=quesContainer>
+                <p> If all the three sides of a triangle are equal, the triangle is called ?</p>
+                <label>
+                    <input type="radio" name=question5 value="scalene" required/>scalene
+                    <input type="radio" name=question5 value="isosceles" required/> isosceles
+                    <input type="radio" name=question5 value="equilateral" required/>equilateral
+                </label>
+            </div>
+
+            <div class=quesContainer>
+                <p> Which of the following triangles are always similar ?</p>
+                <label>
+                    <input type="radio" name=question6 value="Equilateral triangle" required/>Equilateral triangle
+                    <input type="radio" name=question6 value="Isosceles triangle" required /> Isosceles triangle
+                </label>
+            </div>
+
+            <div class=quesContainer>
+                <p> Which ancient Greek philosopher studied triangles ?</p>
+                <label>
+                    <input type="radio" name=question7 value="Plato" required/>  Plato
+                    <input type="radio" name=question7 value="Pythagoras" required/> Pythagoras
+                    <input type="radio" name=question7 value="Socrates" required/>Socrates
+                </label>
+            </div>
+            
+            <div class=quesContainer>
+                <p>What type of shape is a triangle ?</p>
+                <label>
+                    <input type="radio" name=question8 value="Polygon" required/>Polygon
+                    <input type="radio" name=question8 value="Pentagon" required/>Pentagon
+                    <input type="radio" name=question8 value="Hexagon" required/>Hexagon
+                </label>
+            </div>
+
+            <div class=quesContainer>
+                <p>How many dimensions does a triangle have ?</p>
+                <label>
+                    <input type="radio" name=question9 value="1" required />1
+                    <input type="radio" name=question9 value="2" required/>2
+                    <input type="radio" name=question9 value="3" required/>3
+                </label>
+            </div>
+
+            <div class=quesContainer>
+                <p>A trapeze is a type of triangle ?</p>
+                <label>
+                    <input type="radio" name=question10 value="true"required />true
+                    <input type="radio" name=question10 value="false" required/>false
+                
+                </label>
+            </div>
+
+
+            <button id="inputBtn" type="submit" class="button">
+                Submit
+            </button>
+
+
+        </form>
+ 
+
+
+    </div>
+
+    <div class="outputBox"></div>
+
+
+    
 
     <script src="quiz.js"></script>
 </body>

@@ -1,21 +1,34 @@
-const quizForm = document.querySelector('.quiz-form');
-const submitBtn = document.querySelector('#submit-btn');
-const scoreDiv = document.querySelector('.output');
+const inputBtn = document.querySelector("#inputBtn")
+const form = document.querySelector(".form")
+const outputBox = document.querySelector(".outputBox")
 
-const correctAnswers = ['90°', 'right angled'];
+form.addEventListener("submit", clickHandler)
 
-function calculateScore(e) {
-	e.preventDefault();
-	const data = new FormData(quizForm);
-	let index = 0,
-		score = 0;
-	for (let entry of data.values()) {
-		if (entry === correctAnswers[index]) {
-			score++;
-		}
-		index++;
-	}
-	scoreDiv.innerText = `Your score is ${score}`;
+
+const rightAnswer = ["3",
+    "scalene",
+    "3",
+    "isosceles",
+    "equilateral",
+    "Equilateral triangle",
+    "Pythagoras",
+    "Polygon",
+    "2",
+    "false"
+];
+
+function clickHandler(event) {
+    event.preventDefault();
+    let score = 0;
+    let i = 0;
+    const results = new FormData(form);
+    for (let value of results.values()) {
+        if (value === rightAnswer[i]) {
+            score = score + 1;
+        }
+        i = i + 1
+
+    }
+    console.log(score)
+    outputBox.innerText = `Your score is ${score}.`
 }
-
-submitBtn.addEventListener('click', calculateScore);

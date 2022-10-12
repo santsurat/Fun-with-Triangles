@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 * {
 	--primary-color:orange;
@@ -6,7 +6,7 @@
 	--text-color: #f9fafb;
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'kalam', cursive;
 }
 
 body {
@@ -24,6 +24,23 @@ body {
 	/* color: var(--primary-color); */
 	margin-bottom: 2rem;
 }
+center{
+	padding: 2rem;
+	border: 2px solid var(--primary-color);
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+	margin-bottom: 1rem;
+}
+
+.quesContainer{
+	text-align: center;
+	padding: 2rem;
+	 border: 0.5px solid var(--primary-color); 
+	border-radius: 0.5rem;
+	margin: 1rem 0;
+	margin-left: 15rem;
+	margin-right: 15rem;
+}
 
 .quiz-container {
 	padding: 2rem;
@@ -31,7 +48,12 @@ body {
 	border-radius: 0.5rem;
 	margin: 1rem 0;
 }
-
+.quesContainer p {
+	margin-bottom: 1rem;
+}
+.quesContainer label{
+	margin-right: 0.5rem;
+}
 .quiz-container p {
 	margin-bottom: 1rem;
 }
@@ -53,8 +75,23 @@ body {
 	border-radius: 0.25rem;
 	width: 100%;
 	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'kalam', cursive;
 	font-size: 1rem;
+}
+.outputBox {
+	text-align: center;
+	margin: 2rem 0;
+}
+.button{
+	padding: 0.5rem;
+	background: var(--primary-color);
+	color: var(--text-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 0.25rem;
+	font-weight: bold;
+	font-family: 'kalam', cursive;
+	font-size: 1rem;
+	margin-left: 36rem;
 }
 
 .output {
