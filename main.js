@@ -1,11 +1,12 @@
 const angles = document.querySelectorAll('.angle-input');
 const isTriangleBtn = document.querySelector('#is-triangle-btn');
 const isTriangleOutput = document.querySelector('#is-triangle-output');
+// var errorBox = document.querySelector("#errorBox");
 
-function angles() {
-	var angleOne = Number(input[0].value);
-    var angleTwo = Number(input[1].value);
-    var angleThree = Number(input[2].value);
+function play() {
+	var angleOne = Number(angles[0].value);
+    var angleTwo = Number(angles[1].value);
+    var angleThree = Number(angles[2].value);
 
     calculate(angleOne, angleTwo, angleThree)
 
@@ -23,4 +24,4 @@ function calculate(anOne, anTwo, anThree) {
     } else isTriangleOutput.innerText = "All input angles should be greater than zero"
 
 }
-isTriangleBtn.addEventListener('click', angles);
+isTriangleBtn.addEventListener('click', play);
