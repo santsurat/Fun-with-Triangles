@@ -38,8 +38,8 @@ center{
 	 border: 0.5px solid var(--primary-color); 
 	border-radius: 0.5rem;
 	margin: 1rem 0;
-	margin-left: 15rem;
-	margin-right: 15rem;
+	margin-left:5rem;
+	margin-right:5rem;
 }
 
 .quiz-container {
@@ -82,7 +82,7 @@ center{
 	text-align: center;
 	margin: 2rem 0;
 }
-.button{
+.mouse{
 	padding: 0.5rem;
 	background: var(--primary-color);
 	color: var(--text-color);
@@ -91,7 +91,8 @@ center{
 	font-weight: bold;
 	font-family: 'kalam', cursive;
 	font-size: 1rem;
-	margin-left: 36rem;
+	width:100%;
+	
 }
 
 .output {
